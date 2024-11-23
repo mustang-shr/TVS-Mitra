@@ -1,0 +1,87 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.main-interface {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  padding: 50px;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.canvas {
+  width: 100%;
+  height: 600px;
+  background-color: #121212;
+}
+
+.chatbot-button, .stop-chat {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-interface {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+}
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+.animation-container iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.logo-animation {
+  width: 80%;
+  display: block;
+}
+
+.iframe-container,
+.smooth-fade-in-out {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out; /* Adjust timing as needed */
+}
+
+.smooth-fade-in-out {
+  opacity: 0;
+}
+
+.smooth-fade-in-out-visible {
+  opacity: 1;
+}
